@@ -3,6 +3,13 @@
 var ESC_KEYCODE = 27;
 var ENTER_KEYCODE = 13;
 
+// стартовые координаты окна
+
+var BASE_COORDS = {
+  top: '80px',
+  left: '50%'
+};
+
 var dialogMenu = document.querySelector('.setup');
 var inputName = dialogMenu.querySelector('.setup-user-name');
 var dialogMenuOpen = document.querySelector('.setup-open');
@@ -39,6 +46,8 @@ var openDialogMenu = function () {
 
 var closeDialogMenu = function () {
   dialogMenu.classList.add('hidden');
+  dialogMenu.style.top = BASE_COORDS.top;
+  dialogMenu.style.left = BASE_COORDS.left;
 };
 
 // открытие окна при щелчке мышью на иконке
