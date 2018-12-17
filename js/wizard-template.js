@@ -11,8 +11,8 @@
   window.insertWizardData = function (wizardData) {
     var wizardElement = similarWizardTemplate.cloneNode(true);
     wizardElement.querySelector('.setup-similar-label').textContent = wizardData.name;
-    wizardElement.querySelector('.wizard-coat').style.fill = wizardData.coatColor;
-    wizardElement.querySelector('.wizard-eyes').style.fill = wizardData.eyesColor;
+    wizardElement.querySelector('.wizard-coat').style.fill = wizardData.colorCoat;
+    wizardElement.querySelector('.wizard-eyes').style.fill = wizardData.colorEyes;
 
     return wizardElement;
   };
